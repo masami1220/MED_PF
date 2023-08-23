@@ -1,0 +1,398 @@
+a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.container{
+  max-width:1160px;
+  padding:0 40px;
+  margin:0 auto;
+}
+
+/* ヘッダー */
+header{
+  width:100%;
+  height: 100px;
+  position:abusolute;
+  top:0;
+  left:0;
+}
+header > .container{
+  height: 100px;
+  display: flex;
+  align-items:center;
+  max-width:none;
+}
+
+/* ロゴ（俺のはない） */
+.area_logo_header .logo{
+  display: block;
+}
+.area_logo_header img{
+  height:60px;
+  vertical-align: bottom;
+}
+
+
+/* ヘッダーナビ */
+.nav_header{
+  margin:0 0 0 auto;
+}
+
+.list_nav_header{
+  display: flex;
+  align-items: center;
+}
+
+.list_nav_header > li{
+  padding : 0px 15px;
+}
+.list_nav_header a{
+  color:#ffffff;
+  font: 500 20px/1em 'future','noto sans japanese',sans-serif;
+  transition:0.3s;
+}
+
+.list_nav_header a:hover{
+  color:#919191
+}
+
+/* トップビュー */
+.area_top_view{
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.area_top_view > .container{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+}
+
+.area_top_view.ttl{
+  color:#fff;
+  font:400 27px/1em 'futura PT','noto sans fapanese',sans-self;
+  letter: spacing 0.04em;
+  margin:20px 0 0;
+  pasition:relative;
+}
+
+/* エリア＿ホーム */
+[class*="area_home"]{
+  padding:80px 0;
+}
+
+/* ヘッド */
+.head_home{
+  margin:0 0 100px;
+  display:flex;
+  justify-content:center;
+}
+
+.head_home .ttl{
+  font:500 56px/1em'futura PT','noto sans japanese',sans-serif;
+  padding:0 0 12px;
+  position:relative;
+}
+
+.head_home .ttl:after{
+  content:"";
+  display:brock;
+  width:100%;
+  height:5px;
+  background:#0cf;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* 2分割レイアウト */
+.layout_2_div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -70px;
+}
+.layout_2_div > div {
+  width: 50%;
+  /* padding:0 0px; */
+}
+
+/* テキスト ＿ホーム */
+.text_home .ttl{
+  font: 400 32px/1em 'futura PT','noto sans japanese', sans-serif; 
+}
+.text_home .description{
+  font: 300 20px/1.8em 'futura PT','noto sans japanese',sans-serif;
+}
+
+.text_home .btnarea{
+  margin: 30px 0 0;
+  display: flex;
+  align-items:center;
+}
+
+/* 画像の大きさ指定 */
+.macbockimage{
+  height: 300px;
+}
+.Tokyoimage{
+  height: 370px;
+  box-shadow: 0px 16px 6px -8px rgba(16,61,72,.2);
+}
+
+/* バックグラウンド（俺のはない） */
+.bg_black{
+  color:#000000;
+  background: #000;
+  font-size:1.2rem;
+  width:100vw;
+  height:80vh;
+  position:relative;
+}
+
+.bg_black2{
+  color:#000000;
+  background: #000;
+}
+
+/* フッター */
+footer > .container{
+  padding:0 0 80px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* SNSリスト */
+/* .list_sns{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  margin:0 -10px;
+}
+
+.list_sns >li{
+  padding:0 10px; 
+}
+
+.list_sns a{
+  display:block;
+  width:40px;
+  height:40px;
+  background:#000;
+  border-radius:50%;
+  position:relative;
+}
+
+list_sns a:before{
+  content:"";
+  display:block;
+  width:30px;
+  height:30px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+list_sns .youtube a:before{
+  background:url("../images/ico_sns_youtube.svg");
+}
+list_sns .instagram a:before{
+  background:url("../images/ico_sns_instagram.svg");
+}
+list_sns .facebook a:before{
+  background:url("../images/ico_sns_facebook.svg"); */
+/* } */
+
+.copylight{
+  font:300 14px/1em 'futura PT','noto sans japanese',sans-serif;
+  margin:30px 0 0;
+}
+
+/* 無理やりfeatureを白塗りに */
+.ttl2{
+  color: #fff;
+}
+
+.ttl3{
+  color: #fff;
+}
+
+/* 追加したfeatureのcss */
+
+.information{
+  width:1000px;
+  height:1000px;
+  /* background:#ccc; */
+  position:absolute;
+  top:50%;
+  left:-15%;
+  transform:translateY(-50%) ;
+}
+
+#circle {
+  width:1000px;
+  height:1000px;
+  position:absolute;
+  /* background:hsl(0, 0%, 70%); */
+  border-radius: 50%;
+  top:0;
+  left:0;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.feature{
+  display:flex;
+  position:absolute;
+  color:rgb(255, 255, 255);
+}
+
+.feature img{
+  width:70px;
+}
+
+.feature div{
+  margin-left:20px;
+}
+
+.feature div a{
+  margin-top:8px;
+}
+
+.one{
+  top:450px;
+  right:70px;
+}
+
+.two{
+  top:100px;
+  left:340px;
+  transform: rotate(-90deg);
+}
+
+.three{
+  bottom:450px;
+  left:50px;
+  transform:rotate(-180deg);
+}
+
+.four{
+  bottom:150px;
+  right:370px;
+  transform:rotate(-270deg);
+}
+
+.pc{
+  width:400px;
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:27%;
+  z-index: 1;
+}
+
+.control{
+  color:white;
+  position:absolute;
+  top:50px;
+  right:6%;
+  transform:translateY(290%);
+  text-align:center;
+}
+
+#upBtn{
+  cursor:pointer;
+  width:20px;
+}
+
+#downBtn{
+  cursor:pointer;
+  transform:rotate(-180deg);
+  width:20px;
+}
+
+.overlay{
+  width:0;
+  height:0;
+  border-top:520px solid #ffffff;
+  border-right:520px solid transparent;
+  border-bottom:520px solid #ffffff;
+  border-left:520px solid #ffffff;
+}
+/* 追加したfeatureのcss */
+
+.content{
+  display:flex;
+  position:absolute;
+  top:300px;
+  right:17%;
+  color:white;
+}
+
+/* 特徴 */
+.list_feature {
+  display:flex;
+  margin: 0 -20px;
+  color:white;
+}
+.list_feature > li {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list_feature .img {
+  margin: 0 0 40px;
+  position: relative;
+  z-index: 1;
+}
+.list_feature .img:before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  /* background: blue; */
+  /* box-shadow: 0px 2px 12px 2px rgba(0,204,255,1); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50% , -50%);
+}
+.list_feature img {
+  width: 80px;
+  height: 80px;
+  vertical-align: bottom;
+}
+.list_feature .ttl {
+  font: 500 28px/1em 'futura PT','noto sans japanese',sans-serif;
+  margin: 0 0 30px;
+}
+.list_feature .description {
+  font: 200 16px/2em 'noto sans japanese',sans-serif;
+}
+
+/* .layout_2_div2{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -70px;
+} */
+
+.img100{
+  width:130px
+} 
+
+.text_home2 .ttl{
+  margin-left: 350px;
+} */
+

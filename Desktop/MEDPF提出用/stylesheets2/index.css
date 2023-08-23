@@ -1,0 +1,109 @@
+.area_top_view{
+  background-image: url("../images2/health2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.container{
+  max-width:1160px;
+  padding:0 40px;
+  margin:0 auto;
+}
+
+/* ヘッド */
+.head_home{
+  margin:0 0 100px;
+  display:flex;
+  justify-content:center;
+}
+
+.head_home .ttl{
+  font:500 56px/1em'futura PT','noto sans japanese',sans-serif;
+  padding:0 0 12px;
+  position:relative;
+}
+
+.health3image{
+  height: 600px;
+}
+
+/* 2分割レイアウト */
+.layout_2_div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -70px;
+}
+.layout_2_div > div {
+  width: 50%;
+  /* padding:0 0px; */
+}
+
+/* テキスト ＿ホーム */
+.text_home .ttl{
+  font: 400 32px/1em 'futura PT','noto sans japanese', sans-serif; 
+}
+.text_home .description{
+  font: 300 20px/1.8em 'futura PT','noto sans japanese',sans-serif;
+}
+
+.text_home .btnarea{
+  margin: 30px 0 0;
+  display: flex;
+  align-items:center;
+}
+
+.head_home .ttl:after{
+  content:"";
+  display:brock;
+  width:100%;
+  height:5px;
+  background:#0cf;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.table th,
+.table td {
+  /* セルの境界線 */
+  border:1px solid #000;
+  padding:1em;
+  font: 300 15px/1.8em 'futura PT','noto sans japanese',sans-serif;
+}
+.table{
+  /* 隣り合う境界線を一本に結合 */
+  border-collapse:collapse;
+}
+
+.table thead{
+  background-color:#2e7c9f;
+  color:#fff
+}
+.table tbody tr:nth-child(odd){
+  background-color:#fff;
+}
+.table tbody tr:nth-child(even){
+  background-color:#dbf6ff;
+}
+/* .table tbody tr:hover{
+  background-color:#bfe4ff;
+} */
+
+.table01{
+  width:72%;
+  table-layout:fixed;
+  /* 表の幅が自動調整されるのを解除 */
+}
+.table01 thead th:nth-child(1){
+  width:20%;
+  box-sizing:border-box;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
