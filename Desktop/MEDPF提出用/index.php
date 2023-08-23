@@ -1,1 +1,1 @@
-<?php include_once("index.tml"); ?>
+<?php include_once("index.html"); ?>
